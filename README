@@ -1,9 +1,15 @@
 DESCRIPTION:
-
+Chef recipe for installing Maven 3. Created since the official cookbook (https://github.com/opscode/cookbooks/tree/master/maven) only supported maven 2 at the time.
 
 REQUIREMENTS:
+Depends on java and jpackage.
 
 ATTRIBUTES:
+None so far.
 
 USAGE:
+Simply include the `maven3` recipe where ever you would like maven 3 installed.  
 
+run_list(
+	"recipe[maven3]"
+	)
